@@ -1,2 +1,38 @@
-
 @import "ember-bootstrap/bootstrap";
+
+//TODO:
+// new item should:
+// bolded action icons
+// see https://storage.googleapis.com/material-design/publish/material_v_12/assets/0B6Okdz75tqQsZGZTVVJIWW4zZWs/components-cards8.png
+
+.new-cor-card {
+  padding: 20px 1px 10px 0;
+  margin-bottom: 2px;
+  border: 0;
+  background-color: $cyan;
+  color: $white;
+  // shadow
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.2), 0 25px 50px 0 rgba(0,0,0,.1);
+	   -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.2), 0 25px 50px 0 rgba(0,0,0,.1);
+	        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2), 0 25px 50px 0 rgba(0,0,0,.1);
+
+}
+
+#add-cor-icon {
+  color: $dark;
+}
+
+#cor-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// following items should have:
+// line separation
+// Y/N buttons?
+
+.cor-item {
+  padding: 20px 1px 10px 0;
+  border-bottom: 1px solid #ededed;
+}

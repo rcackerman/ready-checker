@@ -1,7 +1,34 @@
-<div class="card">
-  <div class="card-body">
-    <p>item</p>
+<li class="cor-item">
+  <div class="row">
+    <div class="col-11">
+      <div class="row">
+        <div class="col-sm-6">
+          <h6>COR Received</h6>
+          <p>5/4/2017</p>
+        </div>
+        <div class="col-sm-6">
+          <h6>Court Date</h6>
+          <p>6/5/2017</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-1">
+      <div class="row">
+        <div class="col-12">
+          <div class="btn-group-toggle">
+            <label class="btn btn-success btn-sm">
+            <input type="checkbox" autocomplete="off">PR
+            </label>
+          </div>
+          <div class="btn-group-toggle">
+            <label class="btn {{if peopleReady "btn-secondary" "btn-warning"}} btn-sm">
+            <input type="checkbox" autocomplete="off" onclick={{action "setNotReady"}}>PNR
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</li>
 {{yield}}
 
