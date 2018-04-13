@@ -15,16 +15,20 @@
     <div class="col-1">
       <div class="row">
         <div class="col-12">
-          <div class="btn-group-toggle">
-            <label class="btn btn-success btn-sm">
-            <input type="checkbox" autocomplete="off">PR
-            </label>
-          </div>
-          <div class="btn-group-toggle">
-            <label class="btn {{if peopleReady "btn-secondary" "btn-warning"}} btn-sm">
-            <input type="checkbox" autocomplete="off" onclick={{action "setNotReady"}}>PNR
-            </label>
-          </div>
+          {{#unless peopleReady}}
+            <div class="btn-group-toggle">
+              <label class="btn btn-success btn-sm">
+              <input type="checkbox" autocomplete="off" onclick={{action "setReady"}}>PR
+              </label>
+            </div>
+          {{/unless}}
+          {{#if peopleReady}}
+            <div class="btn-group-toggle">
+              <label class="btn {{if peopleReady "btn-secondary" "btn-warning"}} btn-sm">
+              <input type="checkbox" autocomplete="off" onclick={{action "setNotReady"}}>PNR
+              </label>
+            </div>
+          {{/if}}
         </div>
       </div>
     </div>

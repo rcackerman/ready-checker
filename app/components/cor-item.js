@@ -5,11 +5,13 @@ export default Component.extend({
 
   actions: {
     setNotReady() {
-      let promise = this.get('togglePNR')();
-      console.info(promise)
-      promise.then(() => {
-        this.set('peopleReady', false);
-      });
+      // TODO this should be a toggle
+      this.set('peopleReady', false);
+      debugger;
+    },
+    
+    setReady() {
+      this.set('peopleReady', true);
     }
   }
 });
