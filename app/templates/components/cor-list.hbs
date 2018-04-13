@@ -1,1 +1,3 @@
-{{cor-item togglePNR=(action "toggleAnyPNR")}}
+{{#each cors as |cor|}}
+  {{cor-item crd=cor.corReceivedDate ncd=cor.nextCourtDate togglePNR=(action "toggleAnyPNR")}}
+{{/each}}
