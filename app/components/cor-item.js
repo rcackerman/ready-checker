@@ -7,7 +7,7 @@ export default Component.extend({
     setNotReady() {
       // TODO this should be a toggle
       this.set('peopleReady', false);
-      debugger;
+      this.$('li').set()
     },
     
     setReady() {
